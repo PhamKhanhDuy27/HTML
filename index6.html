@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="uft-8">
+    <title>Form đơn giản</title>
+</head>
+<style>
+    div.a {
+        text-align:center;
+    }
+</style>
+<body>
+    <form method="get" action="index6.html">
+        <div class="a">
+        <h1>SỞ THÍCH CỦA BẠN</h1>
+        </div>
+        <p>Họ và tên <input type="text" name="name"/></p>
+        <p>Email <input type="text" name="email"/></p>
+        <p>Sở thích
+            <input type="checkbox" name="hobby"/> Thể thao
+            <input type="checkbox" name="hobby"/> Âm nhạc
+            <input type="checkbox" name="hobby"/> Đọc sách<br>
+            <input type="checkbox" name="hobby"/> Lướt web
+            <input type="checkbox" name="hobby"/> Chơi game
+            <input type="checkbox" name="hobby"/> Điện ảnh<br>
+            <input type="checkbox" name="hobby"/> Du lịch
+        </p>
+        <p><input type="submit" name="submit" value="Gửi thông tin"/>
+            <input type="reset" name="reset" value="Nhập lại"/>
+        </p>
+    </form>
+</body>
+<body>
+    <form method="get" action="index6.html">
+        <h1>ĐĂNG KÝ HỌC VIÊN</h1>
+        <P>Họ và tên
+            <input type="text" name="name"/>
+        </P>
+        <p>Ngày sinh
+            <input type="text" name="ngaysinh"/>
+        </p>
+        <p>Giới tính
+            <input type="radio" name="gender"/>Nam
+            <input type="radio" name="gender"/>Nữ
+        </p>
+        <p>Địa chỉ
+            <input type="text" name="diachi"/>
+        </p>
+        <p>Lớp
+            <select name="chonlop">
+                <option value="0">-Chọn lớp-</option>
+                <option value="1">Lớp 1</option>
+                <option value="2">Lớp 2</option>
+                <option value="3">Lớp 3</option>
+                <option value="4">Lớp 4</option>
+            </select>
+        </p>
+        <p>Email
+            <input type="text" name="email"/>
+        </p>
+        <p>Điện thoại
+            <input type="text" name="dienthoai"/>
+        </p>
+        <p>
+            <input type="submit" name="submit" value="Đăng ký"/>
+            <input type="reset" name="reset" value="Nhập lại"/>
+        </p>
+    </form>
+</body>
+</html>
