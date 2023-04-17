@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máy tính đơn giản</title>
+</head>
+
+<body>
+    <table>
+        <input id="view" type="text" width="100%">
+        <tr>
+            <td><input type="button" name="Nhập số 1" value="1" onclick="inputValue(this.value)"></td>
+            <td><input type="button" name="Nhập số 2" value="2" onclick="inputValue(this.value)"></td>
+            <td><input type="button" name="Nhập số 3" value="3" onclick="inputValue(this.value)"></td>
+            <td><input type="button" name="Nhấp dấu cộng" value="+" onclick="inputValue(this.value)"></td>
+        </tr>
+        <tr>
+            <td><input type="button" name="Nhấp số 4" value="4" onclick="inputValue(this.value)"></td>
+            <td><input type="button" name="Nhập số 5" value="5" onclick="inputValue(this.value)"></td>
+            <td><input type="button" name="Nhập số 6" value="6" onclick="inputValue(this.value)"></td>
+            <td><input type="button" name="Nhập dấu trừ" value="-" onclick="inputValue(this.value)"></td>
+        </tr>
+        <tr>
+            <td><input type="button" name="Nhập số 7" value="7" onclick="inputValue(this.value)"></td>
+            <td><input type="button" name="Nhập số 8" value="8" onclick="inputValue(this.value)"></td>
+            <td><input type="button" name="Nhập số 9" value="9" onclick="inputValue(this.value)"></td>
+            <td><input type="button" name="Nhập dấu nhân" value="*" onclick="inputValue(this.value)"></td>
+        </tr>
+        <tr>
+            <td><input type="button" name="Xóa phép tính" value="C" onclick="del()"></td>
+            <td><input type="button" name="Nhập số 0" value="0" onclick="inputValue(this.value)"></td>
+            <td><input type="button" name="Xuất kết quả" value="=" onclick="result()"></td>
+            <td><input type="button" name="Nhập phép chia" value="/" onclick="inputValue(this.value)"></td>
+        </tr>
+
+    </table>
+    <script src="JS/20.js"></script>
+</body>
+
+</html>
