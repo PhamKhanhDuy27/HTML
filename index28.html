@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tổng hợp bài tập điều kiện</title>
+</head>
+
+<body>
+    <p>BT1: Chuyển từ độ C sang độ F</p>
+    <input type="text" id="cel" name="Nhập độ C" placeholder="Nhập độ C">
+    <br><br>
+    <button onclick="convertF()">Kết quả</button>
+    <p id="fah"></p>
+    <br>
+    <p>BT2: Chuyển từ mét sang feet</p>
+    <input type="text" id="m" name="Nhập số mét" placeholder="Nhập số mét">
+    <br><br>
+    <button onclick="convertFT()">Kết quả</button>
+    <p id="ft"></p>
+    <button onclick="areaSquare()">BT3</button>
+    <button onclick="areaRectangle()">BT4</button>
+    <button onclick="areaRightTriangle()">BT5</button>
+    <p>BT6: Giải phương trình bậc nhất</p>
+    <p>a = <input type="number" id="a" name="Nhập a" placeholder="Nhập a"></p>
+    <p>b = <input type="number" id="b" name="Nhập b" placeholder="Nhập b"></p>
+    <button onclick="findX()">Kết quả</button>
+    <br>
+    <p id="x"></p>
+    <p>BT7: Giải phương trình bậc hai</p>
+    <p>a = <input type="number" id="a1" name="Nhập a" placeholder="Nhập a"></p>
+    <p>b = <input type="number" id="b1" name="Nhập b" placeholder="Nhập b"></p>
+    <p>c = <input type="number" id="c1" name="Nhập c" placeholder="Nhập c"></p>
+    <button onclick="findX2()">Kết quả</button>
+    <br>
+    <p id="x1"></p>
+    <button onclick="age()">BT8</button>
+    <button onclick="triangle()">BT9</button>
+    <p>BT10: Tính giá tiền điện</p>
+    <p>Số kwh = <input type="number" id="d" name="Nhập số kwh" placeholder="Nhập số kwh"></p>
+    <button onclick="findMoney()">Kết quả</button>
+    <br>
+    <p id="result"></p>
+    <p>BT11: Tính thu nhập cá nhân</p>
+    <p>TNCN = <input type="number" id="tncn" name="Thu nhập cá nhân" placeholder="Nhập thu nhập cá nhân"></p>
+    <button onclick="findTNCN()">Kết quả</button>
+    <br>
+    <p id="money"></p>
+    <p>BT12: Tính lãi suất ngân hàng</p>
+    <p> Số tiền ban đầu = <input type="number" id="firstCost" name="Số tiền ban đầu" placeholder="Nhập số tiền ban đầu">
+    </p>
+    <p>Số tháng cho vay = <input type="number" id="month" name="Số tháng cho vay" placeholder="Nhập số tháng cho vay">
+    </p>
+    <p>Lãi suất hàng tháng = <input type="number" id="interestRate" name="Lãi suất hàng tháng"
+            placeholder="Nhập lãi suất hàng tháng"></p>
+    <button onclick="bankInterestRate()">Kết quả</button>
+    <br>
+    <p id="final"></p>
+    <script src="JS/23.js"></script>
+</body>
+
+</html>
