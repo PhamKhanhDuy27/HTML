@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sử dụng vòng lập While</title>
+</head>
+
+<body>
+    <h1>JavaScript Loops 3</h1>
+    <p id="demo3"></p>
+    <script>
+        let num = parseInt(prompt("Enter a number: "));
+        alert(num);
+        let total = 0;
+        while (num != -1) {
+            total += num;
+            document.getElementById("demo3").innerHTML = total;
+            num = parseInt(prompt("Enter a number: "));
+            alert(num);
+        }
+    </script>
+    <h1>JaveScript Loops 4</h1>
+    <p id="demo4"></p>
+    <script>
+        let i = 1;
+        let text = "";
+        while (i < 100) {
+            text = text + "<hr width =" + i + "%>" + "<br/>"
+            document.getElementById("demo4").innerHTML = text;
+            i++;
+        }
+    </script>
+</body>
+
+</html>
