@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google dịch</title>
+</head>
+
+<body>
+    <form>
+        <input id='text' type="text" name="Nhập từ cần tra">
+        <button type="button" onclick="google()">Dịch</button>
+        <p id="result"></p>
+    </form>
+    <script>
+        function google() {
+            let text = document.getElementById('text').value;
+            let result = '';
+            let index = 0;
+            let a = ['Avocado', 'Apple', 'Orange', 'Banana', 'Mango'];
+            let b = ['Bơ', 'Táo', 'Cam', 'Chuối', 'Xoài'];
+            for (let i = 0; i < a.length; i++) {
+                if (text == a[i]) {
+                    index = i;
+                    for (let j = 0; j < b.length; j++) {
+                        if (index == j) {
+                            result = b[j];
+                        }
+                    }
+                }
+            }
+            document.getElementById('result').innerHTML = result;
+        }
+    </script>
+</body>
+
+</html>
