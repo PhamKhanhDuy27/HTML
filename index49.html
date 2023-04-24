@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="alertMessage()">BT1</button>
+    <button onclick="alertMessage1()">BT2</button>
+    <button onclick="compare()">BT3</button>
+    <button onclick="addNumbers1()">BT4</button>
+    <button onclick="star()">BT5</button>
+    <script>
+        function alertMessage() {
+            alert("Xin chao")
+        }
+        function alertMessage1() {
+            let number = parseInt(prompt("Input Number: "));
+            number = number + 1;
+            alert(number);
+        }
+        function compare() {
+            let a = parseInt(prompt("Input a: "));
+            let b = parseInt(prompt("Input b: "));
+            if (a > b) {
+                alert(a + ' lon hon ' + b);
+            }
+            else {
+                document.write(a + b);
+            }
+        }
+        function addNumbers1() {
+            function addNumbers() {
+                firstNum = 4;
+                secondNum = 8;
+                result = firstNum + secondNum;
+                return result;
+            }
+            result = 0;
+            document.write(result + '</br>');
+            result = addNumbers();
+            document.write(result);
+        }
+        var arr1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair, Dubhe', 'Regulus'];
+        var arr2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+        function star() {
+            let a = prompt("Input name of star: ");
+            for (let i = 0; i < arr1.length; i++) {
+                if (a == arr1[i]) {
+                    let index = i;
+                    for (let j = 0; j < arr2.length; j++) {
+                        if (index == j) {
+                            document.write(arr2[j]);
+                        }
+                    }
+                }
+
+            }
+            document.write("Khong co du lieu");
+        }
+    </script>
+</body>
+
+</html>
